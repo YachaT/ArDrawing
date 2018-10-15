@@ -37,7 +37,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         self.sceneView.showsStatistics = true
         // if self.sceneView.showsStatistics = true, then the scene view will show frame per second and rendering performance.
         self.sceneView.session.run(configuration)
-        // for a delegate function to be called when the scene is rendered, you need to decalre the scene view delegate to be self by writing
+        // for a delegate function to be called when the scene is rendered, you need to decalre the scene view delegate to be self by writing 
         self.sceneView.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -76,7 +76,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             }
         }
         
-
+ 
         //SUMMARY OF THE RENDER FUNCTION: When the delegate function gets called, you're getting the current position of the camera. And in that position if the button is being pressed (the draw button), you're putting a sphere node in that position. So if you keep doing that, if you keep putting a sphere for every position in every scene that is being rendered, eventually you will form a line of spheres which makes it look like you're drawing something!
     }
 
